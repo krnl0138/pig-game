@@ -5,20 +5,7 @@ var winners, winPointsForm, lastDice;
 names=[];
 winners = [0, 0];
 
-if(window.attachEvent) {
-window.attachEvent('onload', init);
-} else {
-    if(window.onload) {
-        var curronload = window.onload;
-        var newonload = function(evt) {
-            curronload(evt);
-            yourFunctionName(evt);
-        };
-        window.onload = newonload;
-    } else {
-        window.onload = init;
-    }
-}
+init();
 
 
 function inputEvil() {
