@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active"> <!--active for a dot-->
+                <div class="player-name" id="name-0"></div>
+                <div class="player-score" id="score-0">43</div>
+                <!-- <div class="evilDice" id="evilDice-0">Evil dice is 3!</div> -->
+                <!-- <div class="multiplicaton" id="multiplicaton-0">You got 0 six in a row!</div> -->
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1"></div>
+                <div class="player-score" id="score-1">72</div>
+                <!-- <div class="evilDice" id="evilDice-1">Evil dice is 3!</div> -->
+                <!-- <div class="multiplicaton" id="multiplicaton-1">You got 0 six in a row!</div> -->
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+
+            <div class="settings-panel">
+                    <input type="text" class="input" id="winPoints" placeholder="Winning points">
+                    <input type="text" class="input" id="multiDice" placeholder="Multi dice">
+                    <!-- <input type="text" class="input" id="numDices" placeholder="Number of dices"> -->
+                    <input type="text" class="input" id="evilDice" placeholder="Evil dice">
+            </div>
+
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            <button class="btn-settings"><i class="ion-ios-build"></i>Settings</button>
+            <button class="btn-back"><i class="ion-ios-back"></i>Go Back</button>
+
+            <img src="dice-5.png" alt="Dice" class="dice">
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
